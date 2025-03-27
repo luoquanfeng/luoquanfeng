@@ -19,16 +19,16 @@ body{
 	margin:0%;
 }
 .guarantee {
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
-  background-color:    #a7cece;
+  border-color:white;
+  border-width:1px;
+  border-style: dashed;
+  background-color: #a7cece;
 }
 .guarantee {
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
-  background-color:    #a7cece;
-  padding:             25px; 
-  margin:              30px;  /* 新增外边距 */
+  border-color:white;
+  border-width:1px;
+  border-style:dashed;
+  background-color #a7cece;
+  padding:25px; 
+  margin:30px;  /* 新增外边距 */
 }
