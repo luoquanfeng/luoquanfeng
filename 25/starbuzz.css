@@ -41,11 +41,12 @@ h1 {
   color:            #954b4b;
 }
 
-.slogan { color: #954b4b; }
+.slogan { color: #954b4b; 
+}
 
 .beanheading {
   text-align:       center;
-  line-height:      1.8em;
+  line-height:      20em;
 }
 
 a:link {
@@ -59,19 +60,27 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
+/* 表格容器样式，用于布局 */
 div.tableContainer {
   display: talbe;
   border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
 }
 
+/* 主要内容区域样式 */
 .main {
-  display: table-cell;
+  display: table-cell;  /* 将元素显示为表格单元格，用于表格布局 */
   vertical-align: top;  /* 垂直对齐: 顶端对齐 */
-
 }
 
+/* 侧边栏区域样式 */
 .sidebar {
-  display: table-cell;
-  vertical-align: top;
+  display: table-cell;  /* 设置为表格单元格显示 */
+  vertical-align: top;  /* 垂直对齐: 顶端对齐 */
+}
 
+/* 饮品区域样式 */
+.drinks{
+  background-color: #efe5d0;  /* 设置背景颜色为#efe5d0（米色） */
+  padding: 15px;  /* 设置内边距为15像素 */
+  display: table-cell;
 }
