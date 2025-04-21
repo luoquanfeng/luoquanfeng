@@ -2,10 +2,7 @@ body {
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
-
-  margin:           1%;
-  margin: 0px;
-
+  margin:           0px;
 }
 
 .header {
@@ -18,29 +15,16 @@ body {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
+  margin:           0px 10px 10px 10px;
+  display: table-cell;
 }
 
 .sidebar {
-  /* 设置背景颜色为#efe5d0（米色），并添加背景图片，位置在右下角 */
-  background:       #efe5d0 url(images/background.gif) bottom right;
-  /* 设置字体大小为105% */
-  font-size:        105%;
-  /* 设置内边距为15像素 */
-  padding:          15px;
-  /* 设置外边距：上0px，右10px，下10px，左10px */
-  margin:           0px 10px 10px 10px;
-  /* 设置浮动方式为右浮动 */
-  float: right;
-  /* 设置宽度为280像素 */
-
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
   margin:           0px 10px 10px 10px;
-  float: right;
-
-  width: 280px;
+  display: table-cell;
 }
 
 .footer {
@@ -50,7 +34,6 @@ body {
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear: right;
 }
 
 h1 {
@@ -75,6 +58,35 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-.right{
-  float: right;
+
+div.tableContainer {
+  display: talbe;
+  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
+}
+
+.main {
+  display: table-cell;
+  vertical-align: top;  /* 垂直对齐: 顶端对齐 */
+
+}
+
+.sidebar {
+  display: table-cell;
+  vertical-align: top;
+}
+.drinks{
+  background-color: #efe5d0;
+    padding: 15px;
+    display: table-cell;
+}
+.right-header {
+  float:right;
+}
+div.talbeRow {
+  display: table-row;
+}
+.award {
+	position: fixed;
+	top: 30px;
+	left: 45%;
 }
