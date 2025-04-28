@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizarding World Footer</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Footer Container */
+        .footer-container {
+            width: 100%;
+            background-color: rgb(0,0,27);
+            color: #fff;
+            padding: 40px 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Link Navigation */
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        /* 链接之间的竖线分隔符 */
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            padding: 0 12px;
+            position: relative;
+        }
+        
+        /* 除最后一个链接外，每个链接后添加竖线 */
+        .footer-link:not(:last-child)::after {
+            content: "|";
+            position: absolute;
+            right: -3px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: normal;
+        }
+        
+        .footer-link:hover {
+            color: #ccc;
+        }
+        
+        /* 主要内容分隔线 */
+        .content-divider {
+            width: 80%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 auto 30px;
+        }
+        
+        /* Content Section */
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .footer-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .footer-text {
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            color: #ffdb00;
+            font-weight: bold;
+        }
+        
+        /* Copyright */
+        .copyright {
+            font-size: 12px;
+            margin-top: 20px;
+            opacity: 0.9;
+            padding-top: 20px;
+            position: relative;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .footer-link {
+                font-size: 11px;
+                padding: 0 8px;
+            }
+            
+            .footer-title {
+                font-size: 16px;
+            }
+            
+            .footer-text {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-container {
+                padding: 30px 15px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            /* 移动端移除链接间的竖线 */
+            .footer-link:not(:last-child)::after {
+                display: none;
+            }
+            
+            .content-divider,
+            .copyright::before {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#" class="footer-link">Press</a>
+            <a href="#" class="footer-link">FAQs</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Ad Choices</a>
+            <a href="#" class="footer-link">Privacy & Cookies</a>
+            <a href="#" class="footer-link">Children's Privacy Policy</a>
+            <a href="#" class="footer-link">Legals</a>
+            <a href="#" class="footer-link">Starting Harry Potter</a>
+            <img src="https://www.harrypotter.com/assets/_next/static/images/logo-gold-600-7a7e89b6db1ffeaab025f2091d21b645.png" alt="">
+        </div>
+        
+        <div class="content-divider"></div>
+        
+        <div class="footer-content">
+            <div class="footer-title">WIZARDING WORLD DIGITAL 2025</div>
+            <p class="footer-text">
+                Looking for Wizarding World? <span class="highlight">HarryPotter.com</span> is the official home of
+                Harry Potter, Fantastic Beasts, and the Wizarding World, formerly
+                known as Pottermore.
+            </p>
+            <p class="footer-text">
+                Brought to you by Wizarding World Digital and its parent company
+                Warner Bros. Entertainment Inc., delivering the latest news and official
+                products from the Wizarding World and our partners.
+            </p>
+            
+            <div class="copyright">
+                All characters and elements © & TM Warner Bros. Entertainment Inc.<br>
+                Publishing Rights © J.K. Rowling.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
