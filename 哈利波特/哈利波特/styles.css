@@ -1,0 +1,225 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 40px;
+  color: #fff;
+  background-color: rgb(0, 0, 27);
+}
+
+/* ===== MAIN CONTAINER ===== */
+.magical-picks {
+  background-image: url(pic/horizons_bridge.png), url(pic/stars.png)  linear-gradient(180deg, #0e0812, #443455 121.35%);;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 27, 0.8);
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(100, 150, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* ===== HEADER STYLES ===== */
+.magical-picks h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid rgba(100, 150, 255, 0.5);
+  padding-bottom: 15px;
+  text-shadow: 0 0 5px rgba(100, 150, 255, 0.5);
+}
+
+/* ===== PICK ITEM STYLES ===== */
+.pick-item {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6496fa;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pick-item:before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #6496fa;
+}
+
+/* ===== LINK STYLES ===== */
+.pick-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #4dabf7;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.pick-link:hover {
+  color: #6496fa;
+  text-decoration: underline;
+}
+
+/* ===== IMAGE GALLERY STYLES ===== */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.image-row img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+
+}
+
+
+
+body{
+  font-family: 'Times New Roman', serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  color: #f0c75e;
+}
+
+/* 图片画廊样式 */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+}
+
+.gallery-item p {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #fff;
+}
+
+.container{
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.magical-picks{
+  border: solid 0px;
+  text-align: center;
+  width: 1575px;
+  height: 550px;
+
+  background-image: url(https://www.harrypotter.com/images/home/stars.png), linear-gradient(180deg, #0f0f11, #3f5468 121.35%);
+}
+.asd{
+  position: relative;
+}
+.container {
+    /* 其他已有的样式保持不变 */
+    background-image: url('images/horizons_bridge.png'); 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-size: cover; 
+}
+/* 全局边框重置 */
+* {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* 图片容器特殊处理 */
+.image-row img,
+.gallery-item img {
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+/* 文字项边框移除 */
+.pick-item {
+  border-bottom: none !important;
+}
+
+/* 标题下划线保留 */
+.magical-picks h1 {
+  border-bottom: 1px solid rgba(100, 150, 255, 0.5); /* 保留设计需要的装饰线 */
+}
+.image-row{
+  border: solid 1px;
+
+}
+.image-row{
+  border: solid;
+  padding-right: 275px;
+  padding-left: 275px;
+  padding-top: 0px;
+}
+.gallery{
+  border: solid 0px;
+  padding-left: 325px;
+}
+.container{
+  border: solid 0px;
+  position: relative;
+}
+.bhu{
+  border: solid 0px;
+  padding-left: 300px;
+}
